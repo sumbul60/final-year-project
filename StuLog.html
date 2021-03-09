@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Student login </title>
+    <style>
+ *{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(log.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Times New Roman', Times, serif;   
+}
+.login-box h2{
+      text-align:center ;
+      font-family: 'Times New Roman', Times, serif;
+      font-size:25px;
+}
+.login-box
+{ 
+    width: 500px;
+    height: 380px;
+    background:rgba(31, 24, 24, 0.5); 
+    color: #fff;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-40%);
+    box-sizing: border-box;
+    padding: 70px 30px;  
+}
+.login-box p{
+    margin: 0;
+    padding:0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+    height:25px;
+}
+.login-box input[type="submit"]
+{
+    border:none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    background: #5179ad;
+    color: #fff;
+    font-size: 18px;
+    border-radius: none;
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #d30808;
+    color: #000;
+}
+
+
+        .navbar
+        {
+            background-color:rgba(241, 46, 46,0.8);
+            border-radius:30px;
+            width: 1000px;
+            height:80px;
+            margin:auto;
+            margin-top: 15px;
+            padding-left:80px;
+        }
+        .navbar ul{
+            list-style-type:none;
+        }
+        .navbar  ul li{
+            height:50px;
+            float: left;
+            width:140px;
+            font-size: 20px;
+            line-height: 50px;
+            text-align:center;
+        }
+        .navbar ul li a{
+            padding: 15px 18px;
+            text-decoration: none;
+            color:white;
+            display:block;
+        }
+        .navbar ul li a:hover{
+            background-color: teal;
+        }
+        .navbar ul li ul li{
+            display:none;
+            background-color:crimson;
+            width: 200px;
+            height:50px;
+        }
+        .navbar ul li:hover ul li{
+            display:block;
+        }
+      </style>
+    </head>
+ <body>
+    <header>
+        <nav class="navbar">
+           <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Registration</a>
+                <ul>
+                  <li><a href="StuReg.html">Student Registration</a></li>
+                </ul>
+              </li>
+                <li><a href="#">Login</a>
+                  <ul>
+                      <li><a href="AdminLog.html">Admin Login</a></li>
+                    </ul>
+                  </li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+        </header> 
+<div class="login-box">
+    <h2>STUDENT LOGIN</h2>
+    <form action="noaction.php">
+        <p>Username:</p>
+        <input type="text" name="username" placeholder="Enter Enrollment no." required>
+        <p>Password:</p>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <input type="submit" name="submit" value="SUBMIT">
+    </form>
+        </div>      
+</body>
+</html>

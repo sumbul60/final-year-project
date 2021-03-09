@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <title>Student Registration </title>
+<style>
+   *{
+    margin: 0px;
+    padding: 0px; 
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(log.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Times New Roman', Times, serif;   
+}
+.registration-box h2{
+      text-align:center ;
+      font-family: 'Times New Roman', Times, serif;
+      font-size:25px;
+}
+.registration-box
+{ 
+    width: 600px;
+    height: 720px;
+    background:rgba(31, 24, 24, 0.5); 
+    color: #fff;
+    top: 75%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-40%);
+    box-sizing: border-box;
+    padding: 70px 30px;  
+}
+.registration-box p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.registration-box input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    height:30px;
+}
+.registration-box input[type="submit"]
+{
+    border:none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    background: #5179ad;
+    color: #fff;
+    font-size: 18px;
+    border-radius: none;
+}
+.registration-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #d30808;
+    color: #000;
+}
+
+
+          .navbar
+          {
+              background-color:rgba(241, 46, 46,0.8);
+              border-radius:30px;
+              width: 1000px;
+              height:80px;
+              margin:auto;
+              margin-top: 15px;
+              padding-left: 80px;
+          }
+          .navbar ul{
+              list-style-type:none;
+          }
+          .navbar  ul li{
+              height:50px;
+              float: left;
+              width:140px;
+              font-size: 20px;
+              line-height: 50px;
+              text-align:center;
+          }
+          .navbar ul li a{
+              padding: 15px 18px;
+              text-decoration: none;
+              color:white;
+              display:block;
+          }
+          .navbar ul li a:hover{
+              background-color: teal;
+          }
+          .navbar ul li ul li{
+              display:none;
+              background-color:crimson;
+              width: 200px;
+              height:50px;
+          }
+          .navbar ul li:hover ul li{
+              display:block;
+          }
+        </style>
+        </head>
+<body>
+  <header>
+    <nav class="navbar">
+       <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Registration</a>
+            <li><a href="#">Login</a>
+              <ul>
+                <li><a href="AdminLog.html">Admin Login</a></li> 
+                  <li><a href="StuLog.html">Student Login</a></li>
+                </ul>
+              </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+    </div>
+    </header> 
+<div class="registration-box">
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <form action="noaction.php">
+        <p>Name:</p>
+          <input type="text" name="name" required>
+        <p>Course:</p>
+          <input type="text" name="course" required>
+        <p>Enrollment No.:</p>
+          <input type="text" name="enroll" required>
+          <p>Block:</p>
+          <select name="block" style="width: 180px"; >
+              <option>Select Block Name</option>
+             <option value="A">A</option> 
+             <option value="B">B</option>
+          </select>
+        <p>Room No.:</p>
+          <input type="number" name="room" required style="width: 80px; margin-left: 1px; padding: 5px; margin-top: 10px;color:white";>
+        <p>E-mail:</p>
+          <input type="e-mail" name="e-mail" required>
+        <p>Password:</p>
+          <input type="password" name="password" required >
+        <input type="submit" name="submit"value="Register">
+    </form>
+        </div>     
+</body>
+</html>

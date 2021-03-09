@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+      *{
+    margin:0px;
+    padding:0px;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Times New Roman', Times, serif; 
+}
+    .navbar
+    {
+        background-color:rgba(241,46,46,0.8);
+        width: 1000px;
+        height:80px;
+        border-radius: 30px;
+        margin:auto;
+        margin-top: 15px;
+        padding-left:120px;
+    }
+    .navbar ul{
+        list-style-type:none;
+    }
+    .navbar  ul li{
+        height:50px;
+        float:left;
+        width:140px;
+        font-size: 20px;
+        line-height: 50px;
+        text-align:center;
+    }
+    .navbar ul li a{
+        padding: 15px 18px;
+        text-decoration: none;
+        color:white;
+        display:block;
+    }
+    .navbar ul li a:hover{
+        background-color: teal;
+    }
+    .navbar ul li ul li{
+        display:none;
+        background-color:crimson;
+        width:200px;
+        height:50px;
+    }
+    .navbar ul li:hover ul li{
+        display:block;
+    }
+    .content-box h1{
+        text-align:center ;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:40px;
+  }
+  .content-box
+  { 
+      width: 500px;
+      height: 480px;
+      background:rgba(31, 24, 24, 0.5);
+      color:#fff;
+      top: 60%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-40%);
+      box-sizing: border-box;
+      padding: 50px 30px; 
+  }
+  .content-box p{
+      margin: 0;
+      padding:0;
+      font-weight: bold;
+      font-size: 20px;
+  }
+  
+   
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar"> 
+            <nav>
+           <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Registration</a>
+                <ul>
+                  <li><a href="StuReg.html">Student Registration</a></li>
+                </ul>
+              </li>
+                <li><a href="#">Login</a>
+                  <ul>
+                    <li><a href="AdminLog.html">Admin Login</a></li> 
+                      <li><a href="StuLog.html">Student Login</a></li>
+                    </ul>
+                  </li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Contact us</a></li>
+        </ul>
+        </nav>
+        </div>
+        </header>  
+</body>
+     <div class="content-box">
+         <h1>Contact Us</h1>
+     <div class="container">
+         <img src="loc.jpg" width="80px" height="40px">
+         <h3>Address</h3>
+         <p> Sarojini Naidu Hall<br>AMU Campus, Aligarh, Uttar Pradesh 202002</p>
+         <p>Phone:05712721455</p>
+     </div>
+    <div class="row">
+       <br> <h3>Mess Incharge</h3>
+       <p>Name:ABC</p>
+       <p>Mobile No.:</p>
+       <p>E-mail:</p>
+    </div>
+    <div class="col">
+        <br> <h3>Food Incharge</h3>
+       <p>Name:XYZ</p>
+       <p>Mobile No.:</p>
+       <p>E-mail:</p>
+    </div>
+    </div>
+   </body>  
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inventory</title>
+    <style>
+ *{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(stock.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Times New Roman', Times, serif;
+}
+table
+{
+    margin:auto;
+    border-collapse: collapse;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-40%);
+    box-sizing: border-box;
+    padding: 70px 30px; 
+}
+table th{
+    text-align: center;
+    background-color:#3a6070;
+    color:white;
+    padding:4px 30px 4px 8px;
+}
+table td{
+    padding:4px 8px;
+    border:1px solid #e3e3e3;
+}
+th,td{
+    width:120px;
+}
+tr:nth-child(even){
+    background-color: silver;
+}
+tr:nth-child(odd){
+    background-color:#e7edf0;
+}
+table tr{
+    text-align: center;
+}
+
+     .navbar
+        {
+            background-color:rgba(241, 46, 46,0.8);
+            border-radius:30px;
+            width: 1000px;
+            height:80px;
+            margin:auto;
+            margin-top: 15px;
+            padding-left:80px;
+        }
+        .navbar ul{
+          list-style: none;
+        }
+        .navbar ul li{
+            width:180px;
+            height:80px;
+            line-height: 80px;
+            text-align:center;
+            font-size: 20px;
+            float:left;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:white;
+            display:block;
+        }
+        .navbar ul li a:hover{
+            background-color: teal;
+        }
+        .navbar ul li ul li{
+            display:none;
+            background-color:crimson;
+            width: 200px;
+            height:50px;
+        }
+        .navbar ul li:hover ul li{
+            display:block;
+        }
+      
+      </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+           <ul>
+                <li><a href="#">Dashboard</a>
+                    <ul>
+                        <li><a href="AdminDash.html">Admin Dashboard</a></li>
+                      </ul>
+                      </li>
+                <li><a href="#">Purchase item record</a>
+                <li><a href="#">Issue item record</a>
+                <li><a href="#">Student record</a></li>
+                <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+        </header>
+    <div class="stock-box">
+        <table>
+         <tr>
+           <th>Item id</th>
+           <th> Item name</th>
+           <th> Quantity</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>RICE</td>
+            <td>50kg</td>
+        </tr> 
+    <tr>
+        <td>5</td>
+        <td>WHEAT</td>
+        <td>100kg</td>  
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>PULSE</td>
+        <td>10kg</td>   
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>OIL</td>
+        <td>45kg</td>    
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>POTATO</td>
+        <td>40kg</td>   
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>TOMATO</td>
+        <td>10kg</td>   
+    </tr>
+    <tr>
+        <td>45</td>
+        <td>BREAD</td>
+        <td>20 pack</td>   
+    </tr>
+    </table>
+</body>
+</html>

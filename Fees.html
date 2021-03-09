@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fees</title>
+    <style>
+ *{
+margin: 0px;
+padding: 0px;  
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(stock.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Times New Roman', Times, serif;   
+}
+.fees-box h2
+{
+    text-align:center ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:25px;
+}
+.fees-box
+{ 
+    width: 650px;
+    height: 450px;
+    background:rgba(31, 24, 24, 0.5); 
+    color: #fff;
+    top: 50%;
+    left: 55%;
+    position: absolute;
+    transform: translate(-50%,-40%);
+    box-sizing: border-box;
+    padding: 70px 40px; 
+    font-size: 20px;
+}
+.fees-box input[type="submit"]
+{
+    border:none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    background: #5179ad;
+    color: #fff;
+    font-size: 18px;
+    border-radius:none;
+}
+.fees-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #d30808;
+    color: #000;
+}
+
+
+
+     .navbar
+        {
+            background-color:rgba(241, 46, 46,0.8);
+            border-radius:30px;
+            width: 1000px;
+            height:80px;
+            margin:auto;
+            margin-top: 15px;
+            padding-left:80px;
+        }
+        .navbar ul{
+          list-style: none;
+        }
+        .navbar ul li{
+            width:180px;
+            height:80px;
+            line-height: 80px;
+            text-align:center;
+            font-size: 20px;
+            float:left;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:white;
+            display:block;
+        }
+        .navbar ul li a:hover{
+            background-color: teal;
+        }
+        .navbar ul li ul li{
+            display:none;
+            background-color:crimson;
+            width: 200px;
+            height:50px;
+        }
+        .navbar ul li:hover ul li{
+            display:block;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+           <ul>
+                <li><a href="#">Dashboard</a>
+                    <ul>
+                        <li><a href="AdminDash.html">Admin Dashboard</a></li>
+                      </ul>
+                      </li>
+                <li><a href="#">Purchase item record</a>
+                <li><a href="#">Issue item record</a>
+                <li><a href="#">Student record</a></li>
+                <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+        </header>
+<div class="fees-box">
+    <h2>UPDATE FEES AND DUES</h2>
+    Student Name:
+       <input type="text" name="name">
+    Enrollment No.:
+        <input type="text" name="enroll">
+    <table> 
+        <tr>
+            <td>Month:</td>
+            <td><input type="text" name="month"></td>
+        </tr>
+        <tr> 
+            <td> Total days present in hostel: </td>
+            <td> <input type="text" name="pdays"></td>
+        </tr>
+        <tr> 
+            <td>Per day cost:</td>
+            <td><input type="text" name="pdcost"></td>
+        </tr>
+        <tr> 
+           <td>Additional Charges:</td>
+           <td><input type="text" name="addcharge"></td>
+        </tr>
+        <tr>
+            <td> Total Fee:</td>
+            <td><input type="text" name="totalfee"></td>
+        </tr>
+        <tr>
+            <td>Amount Submitted:</td>
+            <td><input type="text" name="feessubmit"></td>
+        </tr>
+        <tr>
+          <td>Dues:</td>
+          <td><input type="text" name="dues"></td>
+      </tr>
+    </table>
+   <br><input type="submit" name="submit" value="SUBMIT">
+    </div>
+</body>
+</html>

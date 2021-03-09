@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase item record</title>
+    <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(stock.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Times New Roman', Times, serif; 
+}
+.purchase-box
+{ 
+    width: 600px;
+    height: 300px;
+    background:rgba(31, 24, 24, 0.5); 
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-40%);
+    box-sizing: border-box;
+    padding: 70px 30px;  
+}
+table td{
+    padding: 5px 10px;
+} 
+table th{
+    padding:15px;
+    color:orangered;
+}
+table tr{
+    text-align: center;
+}
+
+    
+ .navbar
+        {
+            background-color:rgba(241, 46, 46,0.8);
+            border-radius:30px;
+            width: 1000px;
+            height:80px;
+            margin:auto;
+            margin-top: 15px;
+            padding-left:80px;
+        }
+        .navbar ul{
+          list-style: none;
+        }
+        .navbar ul li{
+            width:180px;
+            height:80px;
+            line-height: 80px;
+            text-align:center;
+            font-size: 20px;
+            float:left;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:white;
+            display:block;
+        }
+        .navbar ul li a:hover{
+            background-color: teal;
+        }
+        .navbar ul li ul li{
+            display:none;
+            background-color:crimson;
+            width: 200px;
+            height:50px;
+        }
+        .navbar ul li:hover ul li{
+            display:block;
+        }
+      
+      </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+           <ul>
+                <li><a href="#">Dashboard</a>
+                <ul>
+                    <li><a href="AdminDash.html">Admin Dashboard</a></li>
+                  </ul>
+                  </li>
+                <li><a href="#">Purchase item record</a>
+                <li><a href="#">Issue item record</a>
+                <li><a href="#">Student record</a></li>
+                <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+        </header>
+        <div class="purchase-box">
+            <table>
+             <tr>
+               <th>Date</th>
+               <th> Item id</th>
+               <th> Item name</th>
+               <th> Quantity</th>
+               <th> Rate</th>
+               <th> Total</th>
+            </tr>
+            <tr>
+                <td>22-02-2021</td>
+                <td>17</td>
+                <td>RICE</td>
+                <td>50kg</td>
+                <td>40/kg</td>
+                <td>2000</td>
+            </tr> 
+        <tr>
+            <td>22-02-2021</td>
+            <td>10</td>
+            <td>WHEAT</td>
+            <td>50kg</td> 
+            <td>20/kg</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>22-02-2021</td>
+            <td>51</td>
+            <td>Oil</td>
+            <td>15kg</td> 
+            <td>150/kg</td>
+            <td>2250</td>
+        </tr>
+        <tr>
+            <td>22-02-2021</td>
+            <td>45</td>
+            <td>Potato</td>
+            <td>40kg</td> 
+            <td>20/kg</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>22-02-2021</td>
+            <td>18</td>
+            <td>Pulse</td>
+            <td>20kg</td> 
+            <td>70/kg</td>
+            <td>1400</td>
+        </tr>
+    
+    
+        </table>  
+</body>
+   
+</html>
